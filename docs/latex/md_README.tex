@@ -30,4 +30,22 @@ and
 \end{DoxyCode}
 
 
-to execute 
+to execute.
+
+\doxysection*{Check memory leaks with {\bfseries{valgrind}}}
+
+To check if the code leaks memory\+:
+
+
+\begin{DoxyItemize}
+\item Use Makefile\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+\end{DoxyCode}
+
+\item Execute using {\itshape valgrind} (requires \href{https://valgrind.org}{\texttt{ valgrind}}) 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{valgrind ./exe.x}
+\end{DoxyCode}
+ 
+\end{DoxyItemize}

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pop_5fback_11',['pop_back',['../classList.html#a42e1aee3e26b76b3f4d9386efa7fe8b7',1,'List']]],
-  ['pop_5ffront_12',['pop_front',['../classList.html#a024af4543f71544345351a45850c42d8',1,'List']]]
+  ['insert_12',['insert',['../classList.html#afa2f622e37fa614c7c4509803987a1a7',1,'List']]]
 ];

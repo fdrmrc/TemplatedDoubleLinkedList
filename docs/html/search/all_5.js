@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['templateddoublelinkedlist_6',['TemplatedDoubleLinkedList',['../md_README.html',1,'']]]
+  ['pop_5fback_5',['pop_back',['../classList.html#a42e1aee3e26b76b3f4d9386efa7fe8b7',1,'List']]],
+  ['pop_5ffront_6',['pop_front',['../classList.html#a024af4543f71544345351a45850c42d8',1,'List']]]
 ];

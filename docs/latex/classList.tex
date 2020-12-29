@@ -33,8 +33,7 @@ using {\bfseries iterator} = \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+it
 \mbox{\Hypertarget{classList_ad133d4ebcd71305a673a0d4ffb79c026}\label{classList_ad133d4ebcd71305a673a0d4ffb79c026}} 
 \mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries substitute} (\mbox{\hyperlink{struct____iterator}{iterator}} p, const T \&x)
 \item 
-\mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
-\mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries insert} (\mbox{\hyperlink{struct____iterator}{iterator}} position, const T \&value)
+\mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList_afa2f622e37fa614c7c4509803987a1a7}{insert}} (\mbox{\hyperlink{struct____iterator}{iterator}} position, const T \&value)
 \item 
 void \mbox{\hyperlink{classList_a76274631421076d8b1e03c62716530df}{erase}} (\mbox{\hyperlink{struct____iterator}{iterator}} position)
 \item 
@@ -67,7 +66,14 @@ std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperl
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Erase the element in the list corresponding to the entry position \mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
+Erase the element in the list corresponding to the entry position \mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{position,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function inserts a new \mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}} in the current list \mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!pop\_back@{pop\_back}}
 \index{pop\_back@{pop\_back}!List$<$ T $>$@{List$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
@@ -81,7 +87,7 @@ Remove the last element from the list \mbox{\Hypertarget{classList_a024af4543f71
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Removes the first element from the list 
+Remove the first element from the list 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
