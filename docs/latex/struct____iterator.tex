@@ -1,0 +1,61 @@
+\hypertarget{struct____iterator}{}\doxysection{\+\_\+\+\_\+iterator$<$ T $>$ Struct Template Reference}
+\label{struct____iterator}\index{\_\_iterator$<$ T $>$@{\_\_iterator$<$ T $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct____iterator_a2abd2dab9558c71a2888be07439bfafd}\label{struct____iterator_a2abd2dab9558c71a2888be07439bfafd}} 
+using {\bfseries NodeT} = \mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$
+\item 
+\mbox{\Hypertarget{struct____iterator_ad8e7583c5718470e658ba4ec3ed396c7}\label{struct____iterator_ad8e7583c5718470e658ba4ec3ed396c7}} 
+using {\bfseries value\+\_\+type} = T
+\item 
+\mbox{\Hypertarget{struct____iterator_a65972532118abef7dda35991953beef8}\label{struct____iterator_a65972532118abef7dda35991953beef8}} 
+using {\bfseries difference\+\_\+type} = std\+::ptrdiff\+\_\+t
+\item 
+\mbox{\Hypertarget{struct____iterator_acb672fb582e67939c5345f2d3e73ef3a}\label{struct____iterator_acb672fb582e67939c5345f2d3e73ef3a}} 
+using {\bfseries iterator\+\_\+category} = std\+::forward\+\_\+iterator\+\_\+tag
+\item 
+\mbox{\Hypertarget{struct____iterator_ac776dec22529466e7f6a9d3dfeaab9fc}\label{struct____iterator_ac776dec22529466e7f6a9d3dfeaab9fc}} 
+using {\bfseries reference} = value\+\_\+type \&
+\item 
+\mbox{\Hypertarget{struct____iterator_a0d23ac5a41d2517799bb4436a2a4f921}\label{struct____iterator_a0d23ac5a41d2517799bb4436a2a4f921}} 
+using {\bfseries pointer} = value\+\_\+type $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct____iterator_a6c64b5ad7fd5bc740e1d7a47eb1bf6b9}\label{struct____iterator_a6c64b5ad7fd5bc740e1d7a47eb1bf6b9}} 
+{\bfseries \+\_\+\+\_\+iterator} (\mbox{\hyperlink{structNode_1_1Node}{NodeT}} $\ast$p)
+\item 
+\mbox{\Hypertarget{struct____iterator_ac7fa0ea2ca69bbb5a73719d71d8b0842}\label{struct____iterator_ac7fa0ea2ca69bbb5a73719d71d8b0842}} 
+reference {\bfseries operator$\ast$} () const noexcept
+\item 
+\mbox{\Hypertarget{struct____iterator_a6434007320a276245f8e1db4e2e09071}\label{struct____iterator_a6434007320a276245f8e1db4e2e09071}} 
+pointer {\bfseries operator-\/$>$} () const noexcept
+\item 
+\mbox{\Hypertarget{struct____iterator_a63b98d28b538af0978daba3c196ea25e}\label{struct____iterator_a63b98d28b538af0978daba3c196ea25e}} 
+\mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{struct____iterator_a65a8f0c1f64b813322fc1cdb0e1bbdea}\label{struct____iterator_a65a8f0c1f64b813322fc1cdb0e1bbdea}} 
+\mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \& {\bfseries operator-\/-\/} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct____iterator_a65354b3dbbcbdfebb3a306083465f8e1}\label{struct____iterator_a65354b3dbbcbdfebb3a306083465f8e1}} 
+\mbox{\hyperlink{structNode_1_1Node}{NodeT}} $\ast$ {\bfseries current}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct____iterator_ad1753c5d0a4ffbef90efbeca3d8992d0}\label{struct____iterator_ad1753c5d0a4ffbef90efbeca3d8992d0}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \&a, \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \&b)
+\item 
+\mbox{\Hypertarget{struct____iterator_abeb0167e629f1f552a298c488d9b11f5}\label{struct____iterator_abeb0167e629f1f552a298c488d9b11f5}} 
+bool {\bfseries operator!=} (\mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \&a, \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+iterator}} \&b)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Iterator.\+h\end{DoxyCompactItemize}
