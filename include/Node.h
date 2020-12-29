@@ -18,7 +18,7 @@ struct Node {
     std::unique_ptr<Node> next;
     Node* previous;
 
-    
+    /** Default constructor for struct Node*/
     Node() noexcept = default;
     explicit Node(const T& _data) : data{_data}, next{nullptr},previous{nullptr} {
         std::cout << "l-value Node"<<std::endl;
