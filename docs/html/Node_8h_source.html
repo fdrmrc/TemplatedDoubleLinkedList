@@ -89,24 +89,23 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::unique_ptr&lt;Node&gt; next;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>* previous;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structNode_1_1Node.html">Node</a>(<span class="keyword">const</span> T&amp; _data) : data{_data}, next{<span class="keyword">nullptr</span>},previous{<span class="keyword">nullptr</span>} {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">   22</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">Node</a>() noexcept = default;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    explicit <a class="code" href="structNode_1_1Node.html">Node</a>(const T&amp; _data) : data{_data}, next{<span class="keyword">nullptr</span>},previous{<span class="keyword">nullptr</span>} {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;l-value Node&quot;</span>&lt;&lt;std::endl;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>(<span class="keyword">const</span> T&amp; _data, <a class="code" href="structNode_1_1Node.html">Node</a>* _next, <a class="code" href="structNode_1_1Node.html">Node</a>* _previous): data{_data}, next{_next}, previous{_previous} {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Node(<span class="keyword">const</span> T&amp; _data, Node* _next, Node* _previous): data{_data}, next{_next}, previous{_previous} {}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structNode_1_1Node.html">Node</a>(T&amp;&amp; x) : data{std::move(x)} {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> Node(T&amp;&amp; x) : data{std::move(x)} {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;r-value&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>(T&amp;&amp; x, <a class="code" href="structNode_1_1Node.html">Node</a>* _next, <a class="code" href="structNode_1_1Node.html">Node</a>* _previous) : data{std::move(x)}, next{_next}, previous{_previous} {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Node(T&amp;&amp; x, Node* _next, Node* _previous) : data{std::move(x)}, next{_next}, previous{_previous} {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;r-value&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="structNode_1_1Node.html">Node</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~Node()=<span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//Move semantics, Copy semantics</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
@@ -126,6 +125,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Node_h */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructNode_1_1Node_html"><div class="ttname"><a href="structNode_1_1Node.html">Node::Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a8740f05aa8c136319d6d51b25ff958d7"><div class="ttname"><a href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">Node::Node::Node</a></div><div class="ttdeci">Node() noexcept=default</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

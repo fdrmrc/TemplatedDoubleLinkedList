@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "_eilnpt",
   1: "_ln",
-  2: "eip",
+  2: "einp",
   3: "t"
 };
 
