@@ -109,13 +109,15 @@ public:
         
     }
     
-
+    /**Remove the last element from the list*/
     void pop_back(){
         last->previous->next.reset();
         last=last->previous;
         --_size;
     }
     
+    
+    /**Removes the first element from the list*/
     void pop_front(){
         auto itBeg = begin();
         itBeg.current->next->previous = nullptr;
