@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "_elnt",
+  0: "_elnpt",
   1: "_ln",
-  2: "e",
+  2: "ep",
   3: "t"
 };
 

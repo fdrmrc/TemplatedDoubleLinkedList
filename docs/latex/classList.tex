@@ -38,11 +38,9 @@ using {\bfseries iterator} = \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+it
 \item 
 void \mbox{\hyperlink{classList_a76274631421076d8b1e03c62716530df}{erase}} (\mbox{\hyperlink{struct____iterator}{iterator}} position)
 \item 
-\mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
-void {\bfseries pop\+\_\+back} ()
+void \mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{pop\+\_\+back}} ()
 \item 
-\mbox{\Hypertarget{classList_a024af4543f71544345351a45850c42d8}\label{classList_a024af4543f71544345351a45850c42d8}} 
-void {\bfseries pop\+\_\+front} ()
+void \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\+\_\+front}} ()
 \item 
 \mbox{\Hypertarget{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}\label{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}} 
 std\+::pair$<$ bool, \mbox{\hyperlink{struct____iterator}{iterator}} $>$ {\bfseries find} (const T \&x)
@@ -69,7 +67,21 @@ std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperl
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Erase the element in the list corresponding to the entry position 
+Erase the element in the list corresponding to the entry position \mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove the last element from the list \mbox{\Hypertarget{classList_a024af4543f71544345351a45850c42d8}\label{classList_a024af4543f71544345351a45850c42d8}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes the first element from the list 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
