@@ -30,14 +30,14 @@ to execute.
 
 # Check memory leaks with **valgrind**
 
-To check the code has no memory leaks:
+To check if the code leaks memory:
 
--
+- Use Makefile:
 ```
 make
 ```
 
-- 
+- Execute using *valgrind* (requires [valgrind](https://valgrind.org))
 ```
 valgrind ./exe.x
 ```
