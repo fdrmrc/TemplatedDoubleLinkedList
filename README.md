@@ -26,5 +26,19 @@ and
 ./exe.x
 ```
 
-to execute
+to execute.
+
+# Check memory leaks with **valgrind**
+
+To check the code has no memory leaks:
+
+-
+```
+make
+```
+
+- 
+```
+valgrind ./exe.x
+```
 
