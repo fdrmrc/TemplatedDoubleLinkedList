@@ -79,6 +79,7 @@ public:
 
     }
     
+    /** This function inserts a new @ref Node::Node in the current list */
     iterator insert(iterator position,const T& value) {
         auto newNode = std::make_unique<Node::Node<T>>(value);
         auto prev = position.current ? position.current->previous : last;
@@ -117,7 +118,7 @@ public:
     }
     
     
-    /**Removes the first element from the list*/
+    /**Remove the first element from the list*/
     void pop_front(){
         auto itBeg = begin();
         itBeg.current->next->previous = nullptr;
