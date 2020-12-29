@@ -1,6 +1,6 @@
 # TemplatedDoubleLinkedList
 
-
+This repo contains a C++ implementation of a templated, double-linked, list using smart pointers.
 
 # Documentation
 
@@ -8,7 +8,7 @@ You can find a Doxygen generated documentation [here](https://fdrmrc.github.io/T
 
 # How to compile and run
 
-First, copy the repo in your local machine with
+First, clone the repo in your local machine with
 
 ```
 git clone https://github.com/fdrmrc/TemplatedDoubleLinkedList.git
