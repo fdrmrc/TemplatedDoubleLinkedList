@@ -14,8 +14,12 @@ namespace Node {
 
 template <typename T>
 struct Node {
+    
+    /**@brief Data to be stored in the Node*/
     T data;
+    /** @brief Unique pointer to the next @ref Node of the @ref List */
     std::unique_ptr<Node> next;
+    /** @brief Raw pointer to the previous @ref Node of the @List */
     Node* previous;
 
     /** Default constructor for struct Node*/

@@ -129,6 +129,7 @@ public:
     /**Remove the last element from the list*/
     void pop_back(){
         last->previous->next.reset();
+        std::cout << this <<std::endl;
         last=last->previous;
         --_size;
     }
@@ -136,11 +137,13 @@ public:
     
     /**Remove the first element from the list*/
     void pop_front(){
-        auto itBeg = begin();
-        itBeg.current->next->previous = nullptr;
-        first.reset(itBeg.current->next.release()); //the head is the next one
+        //auto itBeg = begin();
+        first->next->previous = nullptr;
+        first.reset(first->next.release()); //the head is the next one
         --_size;
     }
+    
+    
     
     std::pair<bool,iterator> find(const T& x){
         auto it = begin();
