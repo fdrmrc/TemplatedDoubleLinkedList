@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insert_3',['insert',['../classList.html#afa2f622e37fa614c7c4509803987a1a7',1,'List']]]
+  ['data_3',['data',['../structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e',1,'Node::Node']]]
 ];

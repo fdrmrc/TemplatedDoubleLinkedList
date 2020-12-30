@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7enode_22',['~Node',['../structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208',1,'Node::Node']]]
+  ['list_27',['List',['../classList.html#a5c5e27671b21b3815d4e25b953c69454',1,'List::List()'],['../classList.html#aa11bc9afe36a3823e380e7aae90955ca',1,'List::List(List &amp;&amp;)=default']]]
 ];

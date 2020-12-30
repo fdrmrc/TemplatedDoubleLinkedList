@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_1',['data',['../structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e',1,'Node::Node']]]
+  ['advance_1',['advance',['../classList.html#a37fef9a951144cacb54742f36d3d0b62',1,'List']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['erase_16',['erase',['../classList.html#a76274631421076d8b1e03c62716530df',1,'List']]]
+  ['advance_22',['advance',['../classList.html#a37fef9a951144cacb54742f36d3d0b62',1,'List']]]
 ];

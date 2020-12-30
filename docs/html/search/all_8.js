@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7enode_12',['~Node',['../structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208',1,'Node::Node']]]
+  ['operator_3d_10',['operator=',['../classList.html#a1e58bad6cea16686466fbc481efc6856',1,'List']]]
 ];

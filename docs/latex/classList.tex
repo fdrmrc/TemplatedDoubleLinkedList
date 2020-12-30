@@ -10,23 +10,26 @@ using {\bfseries iterator} = \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+it
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classList_a119aa1ef679745145e3689966dee5dc6}\label{classList_a119aa1ef679745145e3689966dee5dc6}} 
-\mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries begin} ()
-\item 
+\mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList_a119aa1ef679745145e3689966dee5dc6}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Return an iterator to the first element of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_ac99b68e09742bb6173d16d03bcfbe5ff}\label{classList_ac99b68e09742bb6173d16d03bcfbe5ff}} 
-\mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries end} ()
-\item 
-\mbox{\Hypertarget{classList_a88e2ab3be412b78251b916ff4943ab86}\label{classList_a88e2ab3be412b78251b916ff4943ab86}} 
-\mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries go\+\_\+to} (const int n)
-\item 
-\mbox{\Hypertarget{classList_aa11bc9afe36a3823e380e7aae90955ca}\label{classList_aa11bc9afe36a3823e380e7aae90955ca}} 
-{\bfseries List} (\mbox{\hyperlink{classList}{List}} \&\&)=default
-\item 
-\mbox{\Hypertarget{classList_a1e58bad6cea16686466fbc481efc6856}\label{classList_a1e58bad6cea16686466fbc481efc6856}} 
-\mbox{\hyperlink{classList}{List}} \& {\bfseries operator=} (\mbox{\hyperlink{classList}{List}} \&\&)=default
-\item 
-\mbox{\Hypertarget{classList_a722da5ecd14c58537fd745f00b5a6e6c}\label{classList_a722da5ecd14c58537fd745f00b5a6e6c}} 
-{\footnotesize template$<$typename O $>$ }\\void {\bfseries push\+\_\+front} (O \&\&x)
-\item 
+\mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList_ac99b68e09742bb6173d16d03bcfbe5ff}{end}} ()
+\begin{DoxyCompactList}\small\item\em Return an iterator to {\itshape one-\/past-\/the-\/last} element of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_a37fef9a951144cacb54742f36d3d0b62}\label{classList_a37fef9a951144cacb54742f36d3d0b62}} 
+\mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList_a37fef9a951144cacb54742f36d3d0b62}{advance}} (const int n)
+\begin{DoxyCompactList}\small\item\em Return an iterator to the n-\/th element of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_a5c5e27671b21b3815d4e25b953c69454}\label{classList_a5c5e27671b21b3815d4e25b953c69454}} 
+\mbox{\hyperlink{classList_a5c5e27671b21b3815d4e25b953c69454}{List}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_add86237784a281965fe0ba830f4574e1}\label{classList_add86237784a281965fe0ba830f4574e1}} 
+\mbox{\hyperlink{classList_add86237784a281965fe0ba830f4574e1}{$\sim$\+List}} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Default-\/generated constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classList_aa11bc9afe36a3823e380e7aae90955ca}{List}} (\mbox{\hyperlink{classList}{List}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Default-\/generated move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classList}{List}} \& \mbox{\hyperlink{classList_a1e58bad6cea16686466fbc481efc6856}{operator=}} (\mbox{\hyperlink{classList}{List}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Default-\/generated move constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename O $>$ }\\void \mbox{\hyperlink{classList_a722da5ecd14c58537fd745f00b5a6e6c}{push\+\_\+front}} (O \&\&x)
+\begin{DoxyCompactList}\small\item\em Push a node to the front of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_ac148697c412cdb49510f478c68f20ca9}\label{classList_ac148697c412cdb49510f478c68f20ca9}} 
 {\footnotesize template$<$typename O $>$ }\\void {\bfseries push\+\_\+back} (O \&\&x)
 \item 
@@ -34,13 +37,15 @@ using {\bfseries iterator} = \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+it
 \mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries substitute} (\mbox{\hyperlink{struct____iterator}{iterator}} p, const T \&x)
 \item 
 \mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList_afa2f622e37fa614c7c4509803987a1a7}{insert}} (\mbox{\hyperlink{struct____iterator}{iterator}} position, const T \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Inserts a new Node in the current \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classList_a76274631421076d8b1e03c62716530df}{erase}} (\mbox{\hyperlink{struct____iterator}{iterator}} position)
-\item 
+\begin{DoxyCompactList}\small\item\em Remove the element in the list corresponding to the entry position of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
 void \mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{pop\+\_\+back}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Remove the last element from the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classList_a024af4543f71544345351a45850c42d8}\label{classList_a024af4543f71544345351a45850c42d8}} 
 void \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\+\_\+front}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Remove the first element from the list. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}\label{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}} 
 std\+::pair$<$ bool, \mbox{\hyperlink{struct____iterator}{iterator}} $>$ {\bfseries find} (const T \&x)
 \item 
@@ -58,6 +63,25 @@ std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperl
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classList_aa11bc9afe36a3823e380e7aae90955ca}\label{classList_aa11bc9afe36a3823e380e7aae90955ca}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!List@{List}}
+\index{List@{List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classList}{List}}$<$ T $>$\+::\mbox{\hyperlink{classList}{List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default-\/generated move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classList}{List}}} & r-\/value reference \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classList_a76274631421076d8b1e03c62716530df}\label{classList_a76274631421076d8b1e03c62716530df}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!erase@{erase}}
@@ -66,28 +90,67 @@ std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperl
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Remove the element in the list corresponding to the entry position of the \mbox{\hyperlink{classList}{List}} \mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
+
+
+Remove the element in the list corresponding to the entry position of the \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & iterator to the position to be erased \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!insert@{insert}}
 \index{insert@{insert}!List$<$ T $>$@{List$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{insert()}{insert()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{struct____iterator}{iterator}} \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{position,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Inserts a new \mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}} in the current \mbox{\hyperlink{classList}{List}} \mbox{\Hypertarget{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}\label{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}} 
-\index{List$<$ T $>$@{List$<$ T $>$}!pop\_back@{pop\_back}}
-\index{pop\_back@{pop\_back}!List$<$ T $>$@{List$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Remove the last element from the list \mbox{\Hypertarget{classList_a024af4543f71544345351a45850c42d8}\label{classList_a024af4543f71544345351a45850c42d8}} 
-\index{List$<$ T $>$@{List$<$ T $>$}!pop\_front@{pop\_front}}
-\index{pop\_front@{pop\_front}!List$<$ T $>$@{List$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Remove the first element from the list 
+Inserts a new Node in the current \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & @iterator to the position where to insert the values \\
+\hline
+{\em value} & values to be inserted in the Node of the \mbox{\hyperlink{classList}{List}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a1e58bad6cea16686466fbc481efc6856}\label{classList_a1e58bad6cea16686466fbc481efc6856}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classList}{List}}\& \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classList}{List}}$<$ T $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default-\/generated move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classList}{List}}} & r-\/value reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classList_a722da5ecd14c58537fd745f00b5a6e6c}\label{classList_a722da5ecd14c58537fd745f00b5a6e6c}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename O $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{O \&\&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Push a node to the front of the \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value to be inserted in Node Both an {\itshape r-\/value} and {\itshape l-\/value} reference can be given \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
