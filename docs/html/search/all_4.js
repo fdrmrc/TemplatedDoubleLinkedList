@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['end_4',['end',['../classList.html#ac99b68e09742bb6173d16d03bcfbe5ff',1,'List']]],
-  ['erase_5',['erase',['../classList.html#a76274631421076d8b1e03c62716530df',1,'List']]]
+  ['data_4',['data',['../structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e',1,'Node::Node']]]
 ];

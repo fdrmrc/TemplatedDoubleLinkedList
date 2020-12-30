@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['pop_5fback_11',['pop_back',['../classList.html#a42e1aee3e26b76b3f4d9386efa7fe8b7',1,'List']]],
-  ['pop_5ffront_12',['pop_front',['../classList.html#a024af4543f71544345351a45850c42d8',1,'List']]],
-  ['previous_13',['previous',['../structNode_1_1Node.html#a18a9cf98a9a85e5530340a005d125981',1,'Node::Node']]],
-  ['printnode_14',['printNode',['../structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2',1,'Node::Node']]],
-  ['push_5ffront_15',['push_front',['../classList.html#a722da5ecd14c58537fd745f00b5a6e6c',1,'List']]]
+  ['next_10',['next',['../structNode_1_1Node.html#a821860ae7df0b459864e847841e54b0b',1,'Node::Node']]],
+  ['node_11',['Node',['../structNode_1_1Node.html',1,'Node::Node&lt; T &gt;'],['../structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7',1,'Node::Node::Node() noexcept=default'],['../structNode_1_1Node.html#a4fc3496a0840a19884464a6ac44977de',1,'Node::Node::Node(const T &amp;_data)'],['../structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902',1,'Node::Node::Node(const T &amp;_data, Node *_next, Node *_previous)'],['../structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd',1,'Node::Node::Node(T &amp;&amp;x)'],['../structNode_1_1Node.html#a3721d175bc62b6473915655d5546fd92',1,'Node::Node::Node(T &amp;&amp;x, Node *_next, Node *_previous)']]]
 ];

@@ -46,12 +46,10 @@ void \mbox{\hyperlink{classList_a42e1aee3e26b76b3f4d9386efa7fe8b7}{pop\+\_\+back
 \mbox{\Hypertarget{classList_a024af4543f71544345351a45850c42d8}\label{classList_a024af4543f71544345351a45850c42d8}} 
 void \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\+\_\+front}} ()
 \begin{DoxyCompactList}\small\item\em Remove the first element from the list. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}\label{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}} 
-std\+::pair$<$ bool, \mbox{\hyperlink{struct____iterator}{iterator}} $>$ {\bfseries find} (const T \&x)
-\item 
-\mbox{\Hypertarget{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}\label{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}} 
-bool {\bfseries compare} (\mbox{\hyperlink{struct____iterator}{iterator}} it, const T \&x)
-\item 
+std\+::pair$<$ bool, \mbox{\hyperlink{struct____iterator}{iterator}} $>$ \mbox{\hyperlink{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}{find}} (const T \&x)
+\begin{DoxyCompactList}\small\item\em Find the value x in the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}{compare}} (\mbox{\hyperlink{struct____iterator}{iterator}} it, const T \&x)
+\begin{DoxyCompactList}\small\item\em Utility function used to compare date. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_ae296516a252e11963dbf963727ce429a}\label{classList_ae296516a252e11963dbf963727ce429a}} 
 void {\bfseries clear} ()
 \end{DoxyCompactItemize}
@@ -59,8 +57,8 @@ void {\bfseries clear} ()
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classList_a6cb14578e5fafe03c15e3b5d497551e7}\label{classList_a6cb14578e5fafe03c15e3b5d497551e7}} 
-std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classList}{List}} \&l)
-\end{DoxyCompactItemize}
+std\+::ostream \& \mbox{\hyperlink{classList_a6cb14578e5fafe03c15e3b5d497551e7}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{classList}{List}} \&l)
+\begin{DoxyCompactList}\small\item\em Friend function that overloads the {\ttfamily $<$$<$} operator and prints the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -83,6 +81,27 @@ Default-\/generated move constructor.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}\label{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!compare@{compare}}
+\index{compare@{compare}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct____iterator}{iterator}}}]{it,  }\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Utility function used to compare date. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & iterator to the position to be compare \\
+\hline
+{\em x} & value to be compared with {\ttfamily iterator.\+current} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}{find()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classList_a76274631421076d8b1e03c62716530df}\label{classList_a76274631421076d8b1e03c62716530df}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!erase@{erase}}
 \index{erase@{erase}!List$<$ T $>$@{List$<$ T $>$}}
@@ -99,7 +118,23 @@ Remove the element in the list corresponding to the entry position of the \mbox{
 {\em position} & iterator to the position to be erased \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
+\mbox{\Hypertarget{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}\label{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!find@{find}}
+\index{find@{find}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::pair$<$bool,\mbox{\hyperlink{struct____iterator}{iterator}}$>$ \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{const T \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Find the value x in the \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & values to be searched in the \mbox{\hyperlink{classList}{List}}\\
+\hline
+\end{DoxyParams}
+Returns a {\ttfamily std\+::pair} where the {\ttfamily first} element is {\ttfamily true} if x is found, {\ttfamily false} otherwise. The {\ttfamily second} element is an iterator to the position of x (eventually {\ttfamily nullptr}) \mbox{\Hypertarget{classList_afa2f622e37fa614c7c4509803987a1a7}\label{classList_afa2f622e37fa614c7c4509803987a1a7}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!insert@{insert}}
 \index{insert@{insert}!List$<$ T $>$@{List$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{insert()}{insert()}}
@@ -112,7 +147,7 @@ Inserts a new Node in the current \mbox{\hyperlink{classList}{List}}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em position} & @iterator to the position where to insert the values \\
+{\em position} & iterator to the position where to insert the values \\
 \hline
 {\em value} & values to be inserted in the Node of the \mbox{\hyperlink{classList}{List}} \\
 \hline
