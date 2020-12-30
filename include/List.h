@@ -1,6 +1,23 @@
 #include "Iterator.h"
 #include "cmath"
 
+/** @mainpage
+ *
+ *
+ * @section sec_description Description
+ * A C++ templated, double-linked list using smart pointers.
+ *
+ * @section sec_description How to compile
+ * Just run the usual `make` command. If you want to use *valgrind*:
+ *
+ *     valgrind -s ./exe.x
+ *
+ *
+ *
+ *
+ */
+
+
 template <typename T>
 class List {
 private:
@@ -79,7 +96,7 @@ public:
 
     }
     
-    /** This function inserts a new @ref Node::Node in the current list */
+    /** Inserts a new @ref Node::Node in the current @ref List */
     iterator insert(iterator position,const T& value) {
         auto newNode = std::make_unique<Node::Node<T>>(value);
         auto prev = position.current ? position.current->previous : last;
@@ -95,7 +112,7 @@ public:
         return iterator{ptr->get()};
     }
     
-    /** Erase the element in the list corresponding to the entry position */
+    /** Remove the element in the list corresponding to the entry position of the @ref List*/
     void erase(iterator position){ //remove p from the list
         last->printNode();
         if (position.current==first.get()) {
