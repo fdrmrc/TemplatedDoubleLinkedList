@@ -5,21 +5,20 @@
 \item 
 \mbox{\hyperlink{structNode_1_1Node_a8740f05aa8c136319d6d51b25ff958d7}{Node}} () noexcept=default
 \item 
-\mbox{\Hypertarget{structNode_1_1Node_a4fc3496a0840a19884464a6ac44977de}\label{structNode_1_1Node_a4fc3496a0840a19884464a6ac44977de}} 
-{\bfseries Node} (const T \&\+\_\+data)
-\item 
-\mbox{\Hypertarget{structNode_1_1Node_ad4d2774d8aaa3c8ec94b85575bd5e902}\label{structNode_1_1Node_ad4d2774d8aaa3c8ec94b85575bd5e902}} 
-{\bfseries Node} (const T \&\+\_\+data, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+next, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+previous)
-\item 
-\mbox{\Hypertarget{structNode_1_1Node_a7bd940b7274c626b27c6a3a33defccdd}\label{structNode_1_1Node_a7bd940b7274c626b27c6a3a33defccdd}} 
-{\bfseries Node} (T \&\&x)
-\item 
+\mbox{\hyperlink{structNode_1_1Node_a4fc3496a0840a19884464a6ac44977de}{Node}} (const T \&\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Custom constructor with data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNode_1_1Node_ad4d2774d8aaa3c8ec94b85575bd5e902}{Node}} (const T \&\+\_\+data, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+next, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+previous)
+\begin{DoxyCompactList}\small\item\em Copy constructor for Node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNode_1_1Node_a7bd940b7274c626b27c6a3a33defccdd}{Node}} (T \&\&x)
+\begin{DoxyCompactList}\small\item\em Move constructor for Node. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structNode_1_1Node_a3721d175bc62b6473915655d5546fd92}\label{structNode_1_1Node_a3721d175bc62b6473915655d5546fd92}} 
 {\bfseries Node} (T \&\&x, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+next, \mbox{\hyperlink{structNode_1_1Node}{Node}} $\ast$\+\_\+previous)
 \item 
+\mbox{\hyperlink{structNode_1_1Node_ad7caf632b6a4c32c8bb8853bc3eea208}{$\sim$\+Node}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structNode_1_1Node_a05d5b36ddb41290854547ba4e1c99cb2}\label{structNode_1_1Node_a05d5b36ddb41290854547ba4e1c99cb2}} 
-void {\bfseries print\+Node} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{structNode_1_1Node_a05d5b36ddb41290854547ba4e1c99cb2}{print\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Utility function that prints a Node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,11 +37,74 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{structNode_1_1Node}{Node}} $>$ {\bfse
 \mbox{\Hypertarget{structNode_1_1Node_a8740f05aa8c136319d6d51b25ff958d7}\label{structNode_1_1Node_a8740f05aa8c136319d6d51b25ff958d7}} 
 \index{Node::Node$<$ T $>$@{Node::Node$<$ T $>$}!Node@{Node}}
 \index{Node@{Node}!Node::Node$<$ T $>$@{Node::Node$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 \mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$\+::\mbox{\hyperlink{structNode_1_1Node}{Node}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
 
-Default constructor for struct \mbox{\hyperlink{structNode_1_1Node}{Node}} 
+Default constructor for struct \mbox{\hyperlink{structNode_1_1Node}{Node}} \mbox{\Hypertarget{structNode_1_1Node_a4fc3496a0840a19884464a6ac44977de}\label{structNode_1_1Node_a4fc3496a0840a19884464a6ac44977de}} 
+\index{Node::Node$<$ T $>$@{Node::Node$<$ T $>$}!Node@{Node}}
+\index{Node@{Node}!Node::Node$<$ T $>$@{Node::Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$\+::\mbox{\hyperlink{structNode_1_1Node}{Node}} (\begin{DoxyParamCaption}\item[{const T \&}]{\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Custom constructor with data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & The values to be stored in the Node.\\
+\hline
+\end{DoxyParams}
+Create a Node with given data and with next and previous parents initialized to {\ttfamily nullptr} \mbox{\Hypertarget{structNode_1_1Node_ad4d2774d8aaa3c8ec94b85575bd5e902}\label{structNode_1_1Node_ad4d2774d8aaa3c8ec94b85575bd5e902}} 
+\index{Node::Node$<$ T $>$@{Node::Node$<$ T $>$}!Node@{Node}}
+\index{Node@{Node}!Node::Node$<$ T $>$@{Node::Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$\+::\mbox{\hyperlink{structNode_1_1Node}{Node}} (\begin{DoxyParamCaption}\item[{const T \&}]{\+\_\+data,  }\item[{\mbox{\hyperlink{structNode_1_1Node}{Node}}$<$ T $>$ $\ast$}]{\+\_\+next,  }\item[{\mbox{\hyperlink{structNode_1_1Node}{Node}}$<$ T $>$ $\ast$}]{\+\_\+previous }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor for Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & The values to be stored in the Node. \\
+\hline
+{\em \+\_\+next} & Raw pointer to the next Node \\
+\hline
+{\em \+\_\+previous} & Raw pointer to the previous Node\\
+\hline
+\end{DoxyParams}
+Create a Node with given data , next and previous \mbox{\Hypertarget{structNode_1_1Node_a7bd940b7274c626b27c6a3a33defccdd}\label{structNode_1_1Node_a7bd940b7274c626b27c6a3a33defccdd}} 
+\index{Node::Node$<$ T $>$@{Node::Node$<$ T $>$}!Node@{Node}}
+\index{Node@{Node}!Node::Node$<$ T $>$@{Node::Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$\+::\mbox{\hyperlink{structNode_1_1Node}{Node}} (\begin{DoxyParamCaption}\item[{T \&\&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Move constructor for Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The values to be stored in the current Node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNode_1_1Node_ad7caf632b6a4c32c8bb8853bc3eea208}\label{structNode_1_1Node_ad7caf632b6a4c32c8bb8853bc3eea208}} 
+\index{Node::Node$<$ T $>$@{Node::Node$<$ T $>$}!````~Node@{$\sim$Node}}
+\index{````~Node@{$\sim$Node}!Node::Node$<$ T $>$@{Node::Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Node()}{~Node()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNode_1_1Node}{Node\+::\+Node}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{structNode_1_1Node}{Node}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+Release the memory owned by a Node 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

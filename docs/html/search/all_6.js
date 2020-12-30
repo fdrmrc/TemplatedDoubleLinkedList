@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['templateddoublelinkedlist_7',['TemplatedDoubleLinkedList',['../md_README.html',1,'']]]
+  ['templateddoublelinkedlist_8',['TemplatedDoubleLinkedList',['../md_README.html',1,'']]]
 ];
