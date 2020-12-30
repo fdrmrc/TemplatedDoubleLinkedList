@@ -85,53 +85,57 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structNode_1_1Node.html">Node</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    T data;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::unique_ptr&lt;Node&gt; next;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>* previous;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">   22</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">Node</a>() noexcept = default;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a4fc3496a0840a19884464a6ac44977de">   30</a></span>&#160;    explicit <a class="code" href="structNode_1_1Node.html">Node</a>(const T&amp; _data) : data{_data}, next{<span class="keyword">nullptr</span>},previous{<span class="keyword">nullptr</span>} {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;l-value Node&quot;</span>&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">   43</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">Node</a>(<span class="keyword">const</span> T&amp; _data, <a class="code" href="structNode_1_1Node.html">Node</a>* _next, <a class="code" href="structNode_1_1Node.html">Node</a>* _previous): data{_data}, next{_next}, previous{_previous} {}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">   51</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">Node</a>(T&amp;&amp; x) : data{std::move(x)} {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;r-value&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Node(T&amp;&amp; x, Node* _next, Node* _previous) : data{std::move(x)}, next{_next}, previous{_previous} {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e">   19</a></span>&#160;    T <a class="code" href="structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e">data</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a821860ae7df0b459864e847841e54b0b">   21</a></span>&#160;    std::unique_ptr&lt;Node&gt; <a class="code" href="structNode_1_1Node.html#a821860ae7df0b459864e847841e54b0b">next</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a18a9cf98a9a85e5530340a005d125981">   23</a></span>&#160;    <a class="code" href="structNode_1_1Node.html">Node</a>* <a class="code" href="structNode_1_1Node.html#a18a9cf98a9a85e5530340a005d125981">previous</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">   26</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">Node</a>() noexcept = default;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a4fc3496a0840a19884464a6ac44977de">   34</a></span>&#160;    explicit <a class="code" href="structNode_1_1Node.html">Node</a>(const T&amp; _data) : data{_data}, next{<span class="keyword">nullptr</span>},previous{<span class="keyword">nullptr</span>} {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;l-value Node&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">   47</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">Node</a>(<span class="keyword">const</span> T&amp; _data, <a class="code" href="structNode_1_1Node.html">Node</a>* _next, <a class="code" href="structNode_1_1Node.html">Node</a>* _previous): data{_data}, next{_next}, previous{_previous} {}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">   55</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">Node</a>(T&amp;&amp; x) : data{std::move(x)} {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;r-value&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208">   65</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208">~Node</a>()=<span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//Move semantics, Copy semantics: TOBEDONE</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">printNode</a>(){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Data is: &quot;</span> &lt;&lt; data &lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">/*if(next.get()){</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">            std::cout &lt;&lt; &quot;Next is: &quot; &lt;&lt; next&lt;&lt;&quot; with data: &quot; &lt;&lt; next-&gt;data &lt;&lt;&quot;\n&quot;;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        }if (previous){</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">            std::cout &lt;&lt; &quot;Previous is: &quot; &lt;&lt;previous&lt;&lt;&quot; with data: &quot; &lt;&lt; previous-&gt;data &lt;&lt;&quot;\n&quot;;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        }*/</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; };</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">//end namespace</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Node_h */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Node(T&amp;&amp; x, Node* _next, Node* _previous) : data{std::move(x)}, next{_next}, previous{_previous} {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;r-value&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208">   69</a></span>&#160;    <a class="code" href="structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208">~Node</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//Move semantics, Copy semantics: TOBEDONE</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">printNode</a>(){</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Data is: &quot;</span> &lt;&lt; data &lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">/*if(next.get()){</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">            std::cout &lt;&lt; &quot;Next is: &quot; &lt;&lt; next&lt;&lt;&quot; with data: &quot; &lt;&lt; next-&gt;data &lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">        }if (previous){</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">            std::cout &lt;&lt; &quot;Previous is: &quot; &lt;&lt;previous&lt;&lt;&quot; with data: &quot; &lt;&lt; previous-&gt;data &lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">        }*/</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">//end namespace</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Node_h */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructNode_1_1Node_html"><div class="ttname"><a href="structNode_1_1Node.html">Node::Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a5b12c3a9c971db698e8a668324605b9e"><div class="ttname"><a href="structNode_1_1Node.html#a5b12c3a9c971db698e8a668324605b9e">Node::Node::data</a></div><div class="ttdeci">T data</div><div class="ttdoc">Data to be stored in the Node.</div><div class="ttdef"><b>Definition:</b> Node.h:19</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a18a9cf98a9a85e5530340a005d125981"><div class="ttname"><a href="structNode_1_1Node.html#a18a9cf98a9a85e5530340a005d125981">Node::Node::previous</a></div><div class="ttdeci">Node * previous</div><div class="ttdoc">Raw pointer to the previous Node of the @List.</div><div class="ttdef"><b>Definition:</b> Node.h:23</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a821860ae7df0b459864e847841e54b0b"><div class="ttname"><a href="structNode_1_1Node.html#a821860ae7df0b459864e847841e54b0b">Node::Node::next</a></div><div class="ttdeci">std::unique_ptr&lt; Node &gt; next</div><div class="ttdoc">Unique pointer to the next Node of the List.</div><div class="ttdef"><b>Definition:</b> Node.h:21</div></div>
 <div class="ttc" id="astructNode_1_1Node_html_a8740f05aa8c136319d6d51b25ff958d7"><div class="ttname"><a href="structNode_1_1Node.html#a8740f05aa8c136319d6d51b25ff958d7">Node::Node::Node</a></div><div class="ttdeci">Node() noexcept=default</div></div>
-<div class="ttc" id="astructNode_1_1Node_html_a05d5b36ddb41290854547ba4e1c99cb2"><div class="ttname"><a href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">Node::Node::printNode</a></div><div class="ttdeci">void printNode()</div><div class="ttdoc">Utility function that prints a Node.</div><div class="ttdef"><b>Definition:</b> Node.h:73</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a05d5b36ddb41290854547ba4e1c99cb2"><div class="ttname"><a href="structNode_1_1Node.html#a05d5b36ddb41290854547ba4e1c99cb2">Node::Node::printNode</a></div><div class="ttdeci">void printNode()</div><div class="ttdoc">Utility function that prints a Node.</div><div class="ttdef"><b>Definition:</b> Node.h:77</div></div>
 <div class="ttc" id="astructNode_1_1Node_html_ad7caf632b6a4c32c8bb8853bc3eea208"><div class="ttname"><a href="structNode_1_1Node.html#ad7caf632b6a4c32c8bb8853bc3eea208">Node::Node::~Node</a></div><div class="ttdeci">~Node()=default</div><div class="ttdoc">Default destructor.</div></div>
-<div class="ttc" id="astructNode_1_1Node_html_a7bd940b7274c626b27c6a3a33defccdd"><div class="ttname"><a href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">Node::Node::Node</a></div><div class="ttdeci">Node(T &amp;&amp;x)</div><div class="ttdoc">Move constructor for Node.</div><div class="ttdef"><b>Definition:</b> Node.h:51</div></div>
-<div class="ttc" id="astructNode_1_1Node_html_ad4d2774d8aaa3c8ec94b85575bd5e902"><div class="ttname"><a href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">Node::Node::Node</a></div><div class="ttdeci">Node(const T &amp;_data, Node *_next, Node *_previous)</div><div class="ttdoc">Copy constructor for Node.</div><div class="ttdef"><b>Definition:</b> Node.h:43</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_a7bd940b7274c626b27c6a3a33defccdd"><div class="ttname"><a href="structNode_1_1Node.html#a7bd940b7274c626b27c6a3a33defccdd">Node::Node::Node</a></div><div class="ttdeci">Node(T &amp;&amp;x)</div><div class="ttdoc">Move constructor for Node.</div><div class="ttdef"><b>Definition:</b> Node.h:55</div></div>
+<div class="ttc" id="astructNode_1_1Node_html_ad4d2774d8aaa3c8ec94b85575bd5e902"><div class="ttname"><a href="structNode_1_1Node.html#ad4d2774d8aaa3c8ec94b85575bd5e902">Node::Node::Node</a></div><div class="ttdeci">Node(const T &amp;_data, Node *_next, Node *_previous)</div><div class="ttdoc">Copy constructor for Node.</div><div class="ttdef"><b>Definition:</b> Node.h:47</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
