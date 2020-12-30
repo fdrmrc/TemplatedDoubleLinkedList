@@ -56,6 +56,14 @@ struct Node {
       std::cout << "r-value" << std::endl;
     }
     
+
+    /**
+     * @brief Move constructor for @ref Node
+     * @param x The values to be stored in the current @ref Node
+     * @param _next Raw pointer to the next @ref Node
+     * @param _previous Raw pointer to the previous @ref Node
+     *
+     */
     Node(T&& x, Node* _next, Node* _previous) : data{std::move(x)}, next{_next}, previous{_previous} {
       std::cout << "r-value" << std::endl;
     }

@@ -20,18 +20,40 @@
 template <typename T>
 class List {
 private:
+    /**
+     * @brief Unique pointer to the head  of the @ref List
+     */
     std::unique_ptr<Node::Node<T>> first;
+    /**
+     * @brief Raw pointer to the last element of the @ref List
+     *
+     */
     Node::Node<T>* last; //raw pointer to the last node
+    /**
+     * @brief The current size of the @ref List
+     */
     int _size;
+    
 public:
     
     
     using iterator = __iterator<T>;
     
+    /**
+     *
+     * @brief Return an @ref iterator to the first element of the @ref List
+     */
     iterator begin(){return iterator{first.get()};}
+    
+    /**
+     * @brief Return an @ref iterator to *one-past-the-last* element of the @ref List
+     */
     iterator end(){return iterator{nullptr};} //one past the last
     
-    iterator go_to(const int n){
+    /**
+     * @brief Return an @ref iterator to the n-th element of the @ref List
+     */
+    iterator advance(const int n){
 
         if (n>=_size) {
             return end();
@@ -40,18 +62,40 @@ public:
         }
     }
     
-
+    /**
+     * @brief Default constructor for @ref List
+     */
     List() : first{nullptr}, last{nullptr},_size{0} {}
+    
+    /**
+     * @brief Default-generated constructor
+     */
     ~List() noexcept = default;
+    
+    /**
+     * @brief Default-generated move constructor
+     * @param List r-value reference
+     */
     List(List &&) = default;
+    
+    /**
+     * @brief Default-generated move constructor
+     *
+     * @param List r-value reference
+     */
     List &operator=(List &&) = default;
 
     
     
+    /**
+     * @brief Push a node to the front of the @ref List
+     * @param x value to be inserted in @ref Node
+     * Both an *r-value* and *l-value* reference can be given
+     */
     template <typename O>
     void push_front(O&& x) {
         auto node = std::make_unique<Node::Node<T>>(std::forward<O>(x));
-        std::swap(node, first);  // assuming you implement swap or add a "using std::swap;" on the previous line
+        std::swap(node, first);
         first->next = std::move(node);
         if (_size == 0) {
             assert(!last);
@@ -95,7 +139,13 @@ public:
 
     }
     
-    /** Inserts a new @ref Node::Node in the current @ref List */
+    
+    /**
+     * @brief Inserts a new @ref Node in the current @ref List
+     * @param position @iterator to the position where to insert the values
+     * @param value values to be inserted in the @ref Node of the @ref List
+     *
+     */
     iterator insert(iterator position,const T& value) {
         auto newNode = std::make_unique<Node::Node<T>>(value);
         auto prev = position.current ? position.current->previous : last;
@@ -111,7 +161,10 @@ public:
         return iterator{ptr->get()};
     }
     
-    /** Remove the element in the list corresponding to the entry position of the @ref List*/
+    /**
+     * @brief Remove the element in the list corresponding to the entry position of the @ref List
+     * @param position iterator to the position to be erased
+     */
     void erase(iterator position){ //remove p from the list
         last->printNode();
         if (position.current==first.get()) {
@@ -126,7 +179,9 @@ public:
         
     }
     
-    /**Remove the last element from the list*/
+    /**
+     * @brief Remove the last element from the list
+     */
     void pop_back(){
         last->previous->next.reset();
         std::cout << this <<std::endl;
@@ -135,7 +190,9 @@ public:
     }
     
     
-    /**Remove the first element from the list*/
+    /**
+     * @brief Remove the first element from the list
+     */
     void pop_front(){
         //auto itBeg = begin();
         first->next->previous = nullptr;
