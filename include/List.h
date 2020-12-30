@@ -142,7 +142,7 @@ public:
     
     /**
      * @brief Inserts a new @ref Node in the current @ref List
-     * @param position @iterator to the position where to insert the values
+     * @param position  iterator to the position where to insert the values
      * @param value values to be inserted in the @ref Node of the @ref List
      *
      */
@@ -201,7 +201,13 @@ public:
     }
     
     
-    
+    /**
+     * @brief Find the value x in the @ref List
+     * @param x values to be searched in the @ref List
+     *
+     * Returns a `std::pair` where the `first` element is `true` if x is found, `false` otherwise. The `second` element is an iterator to the position
+     * of x (eventually `nullptr`)
+     */
     std::pair<bool,iterator> find(const T& x){
         auto it = begin();
         auto itEnd = end();
@@ -214,7 +220,10 @@ public:
         return std::pair<bool,iterator>(false,nullptr);
     }
 
-    
+    /**
+     * @brief Friend function that overloads the `<<` operator and prints the @ref List
+     *
+     */
     friend std::ostream& operator<<(std::ostream& os, List& l){
         if (l._size==0) {
             os<<"List is empty";
@@ -230,6 +239,13 @@ public:
     
     
     
+    /**
+     *
+     * @brief Utility function used to compare date. A special case is considered if x is a double (`sizeof(x)==8`)
+     * @param it iterator to the position to be compare
+     * @param x value to be compared with `iterator.current`
+     * @see find()
+     */
     bool compare (iterator it,const T& x){
         bool ret = false;
         const double TOL = 1e-15;
