@@ -7,11 +7,10 @@
  * @section sec_description Description
  * A C++ templated, double-linked list using smart pointers.
  *
- * @section sec_description How to compile
+ * @section sec_compile How to compile
  * Just run the usual `make` command. If you want to use *valgrind*:
  *
  *     valgrind -s ./exe.x
- *
  *
  *
  *
