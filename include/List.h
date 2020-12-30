@@ -79,7 +79,7 @@ public:
     List(List &&) = default;
     
     /**
-     * @brief Default-generated move constructor
+     * @brief Default-generated move assignment
      *
      * @param List r-value reference
      */
