@@ -88,9 +88,8 @@ public:
     
     
     /**
-     * @brief Push a node to the front of the @ref List
-     * @param x value to be inserted in @ref Node
-     * Both an *r-value* and *l-value* reference can be given
+     * @brief Push a @ref Node with value x to the front of the @ref List
+     * @param x values to be inserted in @ref Node. Both an *r-value* and *l-value* reference can be given
      */
     template <typename O>
     void push_front(O&& x) {
@@ -107,7 +106,10 @@ public:
         ++_size;
     }
     
-    
+    /**
+     * @brief Push a @ref Node with value x in the back of the @ref List
+     * @param x values to be inserted in @ref Node. Both an *r-value* and *l-value* reference can be given
+     */
     template <typename O> //forward reference
     void push_back(O&& x){
         auto node = std::make_unique<Node::Node<T>>(std::forward<O>(x));
@@ -241,7 +243,7 @@ public:
     
     /**
      *
-     * @brief Utility function used to compare date. A special case is considered if x is a double (`sizeof(x)==8`)
+     * @brief Utility function used to compare data. A special case is considered if x is a double (`sizeof(x)==8`)
      * @param it iterator to the position to be compare
      * @param x value to be compared with `iterator.current`
      * @see find()
@@ -260,7 +262,10 @@ public:
         return ret;
     }
     
-    
+    /**
+     * @brief Clear the whole @ref List
+     * Apply `reset` to the (unique) pointer to the first element and set @ref _size = 0
+     */
     void clear(){
         first.reset();
         _size=0;
