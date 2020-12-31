@@ -29,10 +29,9 @@ using {\bfseries iterator} = \mbox{\hyperlink{struct____iterator}{\+\_\+\+\_\+it
 \mbox{\hyperlink{classList}{List}} \& \mbox{\hyperlink{classList_a1e58bad6cea16686466fbc481efc6856}{operator=}} (\mbox{\hyperlink{classList}{List}} \&\&)=default
 \begin{DoxyCompactList}\small\item\em Default-\/generated move assignment. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename O $>$ }\\void \mbox{\hyperlink{classList_a722da5ecd14c58537fd745f00b5a6e6c}{push\+\_\+front}} (O \&\&x)
-\begin{DoxyCompactList}\small\item\em Push a node to the front of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classList_ac148697c412cdb49510f478c68f20ca9}\label{classList_ac148697c412cdb49510f478c68f20ca9}} 
-{\footnotesize template$<$typename O $>$ }\\void {\bfseries push\+\_\+back} (O \&\&x)
-\item 
+\begin{DoxyCompactList}\small\item\em Push a Node with value x to the front of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename O $>$ }\\void \mbox{\hyperlink{classList_ac148697c412cdb49510f478c68f20ca9}{push\+\_\+back}} (O \&\&x)
+\begin{DoxyCompactList}\small\item\em Push a Node with value x in the back of the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_ad133d4ebcd71305a673a0d4ffb79c026}\label{classList_ad133d4ebcd71305a673a0d4ffb79c026}} 
 \mbox{\hyperlink{struct____iterator}{iterator}} {\bfseries substitute} (\mbox{\hyperlink{struct____iterator}{iterator}} p, const T \&x)
 \item 
@@ -49,10 +48,10 @@ void \mbox{\hyperlink{classList_a024af4543f71544345351a45850c42d8}{pop\+\_\+fron
 std\+::pair$<$ bool, \mbox{\hyperlink{struct____iterator}{iterator}} $>$ \mbox{\hyperlink{classList_a6ea6ed71fdc94b3f30f6d9a152180ee8}{find}} (const T \&x)
 \begin{DoxyCompactList}\small\item\em Find the value x in the \mbox{\hyperlink{classList}{List}}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classList_a9ce800d4b6a2f262cdd2d834d0a0bfd9}{compare}} (\mbox{\hyperlink{struct____iterator}{iterator}} it, const T \&x)
-\begin{DoxyCompactList}\small\item\em Utility function used to compare date. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Utility function used to compare data. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classList_ae296516a252e11963dbf963727ce429a}\label{classList_ae296516a252e11963dbf963727ce429a}} 
-void {\bfseries clear} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classList_ae296516a252e11963dbf963727ce429a}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the whole \mbox{\hyperlink{classList}{List}} Apply {\ttfamily reset} to the (unique) pointer to the first element and set \+\_\+size = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -90,13 +89,13 @@ bool \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::compare (\begin{DoxyParamCap
 
 
 
-Utility function used to compare date. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) 
+Utility function used to compare data. A special case is considered if x is a double ({\ttfamily sizeof(x)==8}) 
 
 
 \begin{DoxyParams}{Parameters}
 {\em it} & iterator to the position to be compare \\
 \hline
-{\em x} & value to be compared with {\ttfamily iterator.\+current} \\
+{\em x} & value to be compared with {\ttfamily \mbox{\hyperlink{struct____iterator_a65354b3dbbcbdfebb3a306083465f8e1}{iterator.\+current}}} \\
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
@@ -168,6 +167,23 @@ Default-\/generated move assignment.
 {\em \mbox{\hyperlink{classList}{List}}} & r-\/value reference \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classList_ac148697c412cdb49510f478c68f20ca9}\label{classList_ac148697c412cdb49510f478c68f20ca9}} 
+\index{List$<$ T $>$@{List$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename O $>$ \\
+void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{O \&\&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Push a Node with value x in the back of the \mbox{\hyperlink{classList}{List}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & values to be inserted in Node. Both an {\itshape r-\/value} and {\itshape l-\/value} reference can be given \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classList_a722da5ecd14c58537fd745f00b5a6e6c}\label{classList_a722da5ecd14c58537fd745f00b5a6e6c}} 
 \index{List$<$ T $>$@{List$<$ T $>$}!push\_front@{push\_front}}
 \index{push\_front@{push\_front}!List$<$ T $>$@{List$<$ T $>$}}
@@ -178,11 +194,11 @@ void \mbox{\hyperlink{classList}{List}}$<$ T $>$\+::push\+\_\+front (\begin{Doxy
 
 
 
-Push a node to the front of the \mbox{\hyperlink{classList}{List}}. 
+Push a Node with value x to the front of the \mbox{\hyperlink{classList}{List}}. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em x} & value to be inserted in Node Both an {\itshape r-\/value} and {\itshape l-\/value} reference can be given \\
+{\em x} & values to be inserted in Node. Both an {\itshape r-\/value} and {\itshape l-\/value} reference can be given \\
 \hline
 \end{DoxyParams}
 

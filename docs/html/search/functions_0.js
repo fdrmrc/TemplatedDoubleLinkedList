@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['advance_25',['advance',['../classList.html#a37fef9a951144cacb54742f36d3d0b62',1,'List']]]
+  ['_5f_5fiterator_35',['__iterator',['../struct____iterator.html#a6c64b5ad7fd5bc740e1d7a47eb1bf6b9',1,'__iterator::__iterator(NodeT *p)'],['../struct____iterator.html#a20b1bce9e2a4909a1e27b3206bac636b',1,'__iterator::__iterator() noexcept=default']]]
 ];

@@ -2,8 +2,8 @@ var indexSectionsWithContent =
 {
   0: "_abcdefilnopt~",
   1: "_ln",
-  2: "abcefilnop~",
-  3: "dnp",
+  2: "_abcefilnop~",
+  3: "cdnp",
   4: "o",
   5: "t"
 };

@@ -107,11 +107,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1e58bad6cea16686466fbc481efc6856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722da5ecd14c58537fd745f00b5a6e6c"><td class="memTemplParams" colspan="2">template&lt;typename O &gt; </td></tr>
 <tr class="memitem:a722da5ecd14c58537fd745f00b5a6e6c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classList.html#a722da5ecd14c58537fd745f00b5a6e6c">push_front</a> (O &amp;&amp;x)</td></tr>
-<tr class="memdesc:a722da5ecd14c58537fd745f00b5a6e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a node to the front of the <a class="el" href="classList.html">List</a>.  <a href="classList.html#a722da5ecd14c58537fd745f00b5a6e6c">More...</a><br /></td></tr>
+<tr class="memdesc:a722da5ecd14c58537fd745f00b5a6e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a Node with value x to the front of the <a class="el" href="classList.html">List</a>.  <a href="classList.html#a722da5ecd14c58537fd745f00b5a6e6c">More...</a><br /></td></tr>
 <tr class="separator:a722da5ecd14c58537fd745f00b5a6e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac148697c412cdb49510f478c68f20ca9"><td class="memTemplParams" colspan="2"><a id="ac148697c412cdb49510f478c68f20ca9"></a>
-template&lt;typename O &gt; </td></tr>
-<tr class="memitem:ac148697c412cdb49510f478c68f20ca9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>push_back</b> (O &amp;&amp;x)</td></tr>
+<tr class="memitem:ac148697c412cdb49510f478c68f20ca9"><td class="memTemplParams" colspan="2">template&lt;typename O &gt; </td></tr>
+<tr class="memitem:ac148697c412cdb49510f478c68f20ca9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classList.html#ac148697c412cdb49510f478c68f20ca9">push_back</a> (O &amp;&amp;x)</td></tr>
+<tr class="memdesc:ac148697c412cdb49510f478c68f20ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a Node with value x in the back of the <a class="el" href="classList.html">List</a>.  <a href="classList.html#ac148697c412cdb49510f478c68f20ca9">More...</a><br /></td></tr>
 <tr class="separator:ac148697c412cdb49510f478c68f20ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad133d4ebcd71305a673a0d4ffb79c026"><td class="memItemLeft" align="right" valign="top"><a id="ad133d4ebcd71305a673a0d4ffb79c026"></a>
 <a class="el" href="struct____iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>substitute</b> (<a class="el" href="struct____iterator.html">iterator</a> p, const T &amp;x)</td></tr>
@@ -134,10 +134,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a6ea6ed71fdc94b3f30f6d9a152180ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the value x in the <a class="el" href="classList.html">List</a>.  <a href="classList.html#a6ea6ed71fdc94b3f30f6d9a152180ee8">More...</a><br /></td></tr>
 <tr class="separator:a6ea6ed71fdc94b3f30f6d9a152180ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ce800d4b6a2f262cdd2d834d0a0bfd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#a9ce800d4b6a2f262cdd2d834d0a0bfd9">compare</a> (<a class="el" href="struct____iterator.html">iterator</a> it, const T &amp;x)</td></tr>
-<tr class="memdesc:a9ce800d4b6a2f262cdd2d834d0a0bfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function used to compare date. A special case is considered if x is a double (<code>sizeof(x)==8</code>)  <a href="classList.html#a9ce800d4b6a2f262cdd2d834d0a0bfd9">More...</a><br /></td></tr>
+<tr class="memdesc:a9ce800d4b6a2f262cdd2d834d0a0bfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function used to compare data. A special case is considered if x is a double (<code>sizeof(x)==8</code>)  <a href="classList.html#a9ce800d4b6a2f262cdd2d834d0a0bfd9">More...</a><br /></td></tr>
 <tr class="separator:a9ce800d4b6a2f262cdd2d834d0a0bfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae296516a252e11963dbf963727ce429a"><td class="memItemLeft" align="right" valign="top"><a id="ae296516a252e11963dbf963727ce429a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classList.html#ae296516a252e11963dbf963727ce429a">clear</a> ()</td></tr>
+<tr class="memdesc:ae296516a252e11963dbf963727ce429a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the whole <a class="el" href="classList.html">List</a> Apply <code>reset</code> to the (unique) pointer to the first element and set _size = 0. <br /></td></tr>
 <tr class="separator:ae296516a252e11963dbf963727ce429a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -221,11 +222,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Utility function used to compare date. A special case is considered if x is a double (<code>sizeof(x)==8</code>) </p>
+<p>Utility function used to compare data. A special case is considered if x is a double (<code>sizeof(x)==8</code>) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">it</td><td>iterator to the position to be compare </td></tr>
-    <tr><td class="paramname">x</td><td>value to be compared with <code>iterator.current</code> </td></tr>
+    <tr><td class="paramname">x</td><td>value to be compared with <code><a class="el" href="struct____iterator.html#a65354b3dbbcbdfebb3a306083465f8e1" title="Raw pointer to the current Node.">iterator.current</a></code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -389,6 +390,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ac148697c412cdb49510f478c68f20ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac148697c412cdb49510f478c68f20ca9">&#9670;&nbsp;</a></span>push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classList.html">List</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">O &amp;&amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Push a Node with value x in the back of the <a class="el" href="classList.html">List</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>values to be inserted in Node. Both an <em>r-value</em> and <em>l-value</em> reference can be given </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a722da5ecd14c58537fd745f00b5a6e6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a722da5ecd14c58537fd745f00b5a6e6c">&#9670;&nbsp;</a></span>push_front()</h2>
 
@@ -417,10 +456,10 @@ template&lt;typename O &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Push a node to the front of the <a class="el" href="classList.html">List</a>. </p>
+<p>Push a Node with value x to the front of the <a class="el" href="classList.html">List</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>value to be inserted in Node Both an <em>r-value</em> and <em>l-value</em> reference can be given </td></tr>
+    <tr><td class="paramname">x</td><td>values to be inserted in Node. Both an <em>r-value</em> and <em>l-value</em> reference can be given </td></tr>
   </table>
   </dd>
 </dl>

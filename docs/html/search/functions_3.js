@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['end_28',['end',['../classList.html#ac99b68e09742bb6173d16d03bcfbe5ff',1,'List']]],
-  ['erase_29',['erase',['../classList.html#a76274631421076d8b1e03c62716530df',1,'List']]]
+  ['clear_38',['clear',['../classList.html#ae296516a252e11963dbf963727ce429a',1,'List']]],
+  ['compare_39',['compare',['../classList.html#a9ce800d4b6a2f262cdd2d834d0a0bfd9',1,'List']]]
 ];
