@@ -1,5 +1,4 @@
 #include "include/List.h"
-
 int main() {
     
     
@@ -35,15 +34,15 @@ int main() {
 
 
 
-    auto p{l.go_to(1)};
+    auto p{l.advance(1)};
 //    std::cout << *p <<std::endl;
     auto itp = l.insert(p,98);
     std::cout << "My list after insertion: \t" << l<<std::endl;
-    auto pp{l.go_to(2)};
+    auto pp{l.advance(2)};
 //    std::cout << *pp <<std::endl;
     auto itpp = l.insert(pp,15);
     std::cout << "My list after insertion is: \t" << l<<std::endl;
-    auto ppp{l.go_to(4)};
+    auto ppp{l.advance(4)};
     std::cout << *ppp <<std::endl;
     auto itppp = l.insert(ppp,96);
     std::cout << "My list after insertion is: \t" << l<<std::endl;
@@ -52,11 +51,11 @@ int main() {
     
 
     std::cout << *ppp <<std::endl;
-    auto iteras = l.go_to(6);
+    auto iteras = l.advance(6);
     l.erase(iteras);
     std::cout << "List after erasure: "<< l <<std::endl;
     
-    auto addagain = l.go_to(6);
+    auto addagain = l.advance(6);
     auto itaddagain = l.insert(addagain, 19);
     std::cout << "My list after insertion is: \t" << l<<std::endl;
     
@@ -70,7 +69,7 @@ int main() {
     l.push_front(88);
     std::cout << l <<std::endl;
     
-    auto prova = l.go_to(4);
+    auto prova = l.advance(4);
     l.erase(prova);
     std::cout << l <<std::endl;
     
