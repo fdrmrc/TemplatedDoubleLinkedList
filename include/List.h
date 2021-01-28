@@ -1,5 +1,6 @@
 #include "Iterator.h"
 #include "cmath"
+#include <cassert>
 
 /** @mainpage
  *
