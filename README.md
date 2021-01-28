@@ -1,6 +1,9 @@
 # TemplatedDoubleLinkedList
 
 [![Build Status](https://travis-ci.com/fdrmrc/TemplatedDoubleLinkedList.svg?branch=main)](https://travis-ci.com/github/fdrmrc/TemplatedDoubleLinkedList)
+[![Documentation Status](https://fdrmrc.github.io/TemplatedDoubleLinkedList)](https://fdrmrc.github.io/TemplatedDoubleLinkedList)
+
+
 
 This repo contains a C++ implementation of a templated, double-linked, list using smart pointers.
 
